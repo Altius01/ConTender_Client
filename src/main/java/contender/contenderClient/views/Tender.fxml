@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1">
+  <tabs>
+    <Tab text="Текущий тендер">
+         <content>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <AnchorPane id="tender_info" prefHeight="367.0" prefWidth="155.0" />
+                  <Separator orientation="VERTICAL" prefHeight="367.0" prefWidth="6.0" />
+                  <VBox>
+                     <children>
+                        <AnchorPane id="product_pane" prefHeight="200.0" prefWidth="200.0" />
+                        <Separator prefWidth="200.0" />
+                        <ListView id="suppliers_list" prefHeight="282.0" prefWidth="434.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </content></Tab>
+  </tabs>
+</TabPane>

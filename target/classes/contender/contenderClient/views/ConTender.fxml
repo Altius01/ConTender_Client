@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1">
+  <tabs>
+    <Tab text="Поставщик">
+         <content>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox alignment="CENTER">
+                     <children>
+                        <ListView id="supplied_products" />
+                        <Separator prefWidth="200.0" />
+                        <Button mnemonicParsing="false" text="Добавить товар" />
+                     </children>
+                  </VBox>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+                  <Pagination id="consumers" prefHeight="367.0" prefWidth="210.0" />
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+                  <ListView id="supplier_tenders" prefHeight="200.0" prefWidth="200.0" />
+               </children>
+            </HBox>
+         </content></Tab>
+      <Tab text="Покупатель">
+         <content>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox alignment="CENTER">
+                     <children>
+                        <ListView id="supplied_products" />
+                        <Separator prefWidth="200.0" />
+                        <Button mnemonicParsing="false" text="Добавить товар" />
+                     </children>
+                  </VBox>
+                  <Separator orientation="VERTICAL" prefHeight="367.0" prefWidth="0.0" />
+                  <Pagination id="suppliers" prefHeight="367.0" prefWidth="210.0" />
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+                  <ListView id="consumer_tenders" prefHeight="200.0" prefWidth="200.0" />
+               </children>
+            </HBox>
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>
